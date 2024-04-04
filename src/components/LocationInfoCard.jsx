@@ -15,7 +15,7 @@ const LocationInfoCard = (props) => {
 
   return (
     <Card key={key} sx={{ display: 'flex', my:1, p:1 }} >
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', width:"100%" }}>
         <CardContent sx={{ flex: '1 0 auto', p: 1 }}>
           <Typography component="div" variant="body2">
             {location.name || location.id}
