@@ -23,7 +23,7 @@ const MapContainer = () => {
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <ZoomControl position="bottomright" />
+        <ZoomControl position="topright" />
         {selectedLocation && <MapPin isAddIcon position={selectedLocation}></MapPin>}
         {locations.map((location) => (
           <MapPin key={location.id} position={location}>
